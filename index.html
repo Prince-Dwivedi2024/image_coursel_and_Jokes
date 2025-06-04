@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Styling & JavaScript</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ==== Header / Navbar ==== -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Image coursel and some jokes</h1>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="#carousel-section">Carousel</a></li>
+          <li><a href="#joke-section">Random Joke</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==== Main Content ==== -->
+  <main>
+    <!-- ===== Task 2: Image Carousel ===== -->
+    <section id="carousel-section" class="carousel-section">
+      <h2>Image Carousel</h2>
+      <div class="carousel-container">
+        <button class="carousel-btn prev-btn" id="prevBtn">&#10094;</button>
+        <div class="carousel-slides">
+          <!-- Replace these <img> src values with your own images or valid URLs -->
+          <img src="https://picsum.photos/id/1015/800/400" class="carousel-image active" alt="Slide 1" />
+          <img src="https://picsum.photos/id/1016/800/400" class="carousel-image" alt="Slide 2" />
+          <img src="https://picsum.photos/id/1018/800/400" class="carousel-image" alt="Slide 3" />
+          <img src="https://picsum.photos/id/1020/800/400" class="carousel-image" alt="Slide 4" />
+        </div>
+        <button class="carousel-btn next-btn" id="nextBtn">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- ===== Task 3: Fetch Data from an API ===== -->
+    <section id="joke-section" class="joke-section">
+      <h2>Get a Random Joke</h2>
+      <button id="getJokeBtn" class="btn">Fetch a Joke</button>
+      <div id="jokeDisplay" class="joke-display">
+        <!-- Fetched joke will appear here -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ==== Footer ==== -->
+  <footer class="site-footer">
+    <p>&copy; 2025 My Interactive Site. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
